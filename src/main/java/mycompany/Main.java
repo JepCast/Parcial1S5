@@ -53,6 +53,5 @@ public class Main {
         // Imprimir la lista enlazada ordenada
         System.out.println("Lista enlazada ordenada:");
         lista.imprimirLista();
-
     }
 }
