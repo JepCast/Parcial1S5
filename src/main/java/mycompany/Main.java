@@ -1,20 +1,22 @@
 package mycompany;
+
+// Importaciones de las clases y paquetes necesarios
 import mycompany.exercises.Matriz.Matriz;
 import mycompany.exercises.Matriz.Posicion;
 import mycompany.exercises.StairsSnakes.StairsSnakes;
 import mycompany.exercises.LinkedList.LinkedList;
 import mycompany.exercises.LinkedList.OrdenadorListaEnlazada;
-import mycompany.exercises.LinkedList.Nodo;
 
-import java.util.List;
+import java.util.List; // Importación para trabajar con listas
 
+// Clase principal del programa
 public class Main {
     public static void main(String[] args) {
-        // Crear el juego de escaleras y serpientes
+        // Crear el juego de escaleras y serpientes y ejecutarlo
         StairsSnakes juego = new StairsSnakes();
         juego.jugar();
 
-        // Crear la matriz y obtener las posiciones adyacentes
+        // Crear una matriz y obtener las posiciones adyacentes
         System.out.println("");
         System.out.println("--------------------");
         int[][] matriz = {
@@ -23,17 +25,19 @@ public class Main {
                 {7, 8, 9}
         };
 
-        Matriz miMatriz = new Matriz(matriz);
-        Posicion posicion = new Posicion(1, 1);
+        Matriz miMatriz = new Matriz(matriz); // Crear un objeto Matriz
+        Posicion posicion = new Posicion(1, 1); // Crear una posición en la matriz
 
+        // Obtener las posiciones adyacentes a la posición dada
         List<Posicion> adyacentes = miMatriz.obtenerPosicionesAdyacentes(posicion);
 
+        // Imprimir las posiciones adyacentes
         System.out.println("Posiciones adyacentes a la posición (" + posicion.fila + "," + posicion.columna + "):");
         for (Posicion p : adyacentes) {
             System.out.println("(" + p.fila + "," + p.columna + ")");
         }
 
-        // Crear la lista enlazada de acuerdo con la entrada
+        // Crear una lista enlazada y agregar nodos
         LinkedList lista = new LinkedList();
         System.out.println("");
         System.out.println("--------------------");
