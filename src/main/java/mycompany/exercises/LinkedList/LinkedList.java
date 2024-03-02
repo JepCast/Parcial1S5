@@ -27,7 +27,7 @@ public class LinkedList {
     }
 
     // Método para imprimir la lista enlazada como una cadena de valores separados por espacios
-    void imprimirLista() {
+    public void imprimirLista() {
         Nodo temp = head;
         while (temp != null) {
             System.out.print(temp.valor + " ");

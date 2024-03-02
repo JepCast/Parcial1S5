@@ -42,8 +42,8 @@ public class Main {
         System.out.println("");
         System.out.println("--------------------");
         lista.agregarNodo(10);
-        lista.agregarNodo(-5);
-        lista.agregarNodo(3);
+        lista.agregarNodo(5);
+        lista.agregarNodo(-3);
         lista.agregarNodo(1);
         lista.agregarNodo(11);
 
