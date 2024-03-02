@@ -4,11 +4,9 @@ public class StairsSnakes {
     private static final int TAMAÑO_TABLERO = 64;
     private static final int MAX_CARAS_DADO = 6;
     private static final int BLOQUEADO = 1;
-
     private final int[] casillasEspecialesOrigen;
     private final int[] casillasEspecialesDestino;
     private final int[] tablero;
-
     private int posicionActualJugador;
     private int numeroTirosConsecutivosSeis;
 
@@ -49,7 +47,6 @@ public class StairsSnakes {
             posicionActualJugador = posicionDestinoEspecial;
         }
     }
-
 
     private int obtenerPosicionDestinoEspecial(int posicionActual) {
         for (int i = 0; i < casillasEspecialesOrigen.length; i++) {

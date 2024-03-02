@@ -14,7 +14,6 @@ public class Main {
         StairsSnakes juego = new StairsSnakes();
         juego.jugar();
 
-
         // Crear la matriz y obtener las posiciones adyacentes
         System.out.println("");
         System.out.println("--------------------");
@@ -34,7 +33,6 @@ public class Main {
             System.out.println("(" + p.fila + "," + p.columna + ")");
         }
 
-
         // Crear la lista enlazada de acuerdo con la entrada
         LinkedList lista = new LinkedList();
         System.out.println("");
@@ -51,8 +49,6 @@ public class Main {
         // Imprimir la lista enlazada ordenada
         System.out.println("Lista enlazada ordenada:");
         lista.imprimirLista();
-
-
 
     }
 }

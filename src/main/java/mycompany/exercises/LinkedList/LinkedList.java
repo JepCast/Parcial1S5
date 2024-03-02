@@ -22,12 +22,13 @@ public class LinkedList {
     }
 
     // Función para imprimir la lista enlazada
-    public void imprimirLista() {
-        Nodo temp = head;
-        while (temp != null) {
-            System.out.print(temp.valor + " ");
-            temp = temp.siguiente;
+    public String imprimirLista() {
+        StringBuilder sb = new StringBuilder();
+        Nodo actual = head;
+        while (actual != null) {
+            sb.append(actual.valor).append(" ");
+            actual = actual.siguiente;
         }
-        System.out.println();
+        return sb.toString().trim();
     }
 }

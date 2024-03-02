@@ -2,7 +2,6 @@ package mycompany.exercises.Matriz;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class Matriz {
     private int[][] matriz;
 
